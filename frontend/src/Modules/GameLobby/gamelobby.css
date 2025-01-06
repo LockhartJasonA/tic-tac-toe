@@ -1,0 +1,94 @@
+.game-lobby-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.game-lobby-container .game-lobby-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.game-lobby-container .game-lobby-header a {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.game-lobby-container .game-lobby-header .player-list {
+    border-radius: 4px;
+    padding: 20px;
+    margin-left: 20px;
+    min-height: 60.5px;
+}
+
+.game-lobby-container .game-lobby-header .player-list div {
+    line-height: 1.5;
+}
+
+.game-lobby-container .game-lobby-header .player-list  .players-title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.game-lobby-container .play-area {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.game-lobby-container .play-area.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.game-lobby-container .play-area .block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 3px solid black;
+    transition: background 0.2s ease-in-out;
+}
+
+.game-lobby-container .play-area .block.winning-block-good {
+    background-color: lightgreen;
+}
+
+.game-lobby-container .play-area .block.winning-block-bad {
+    background-color: lightcoral;
+}
+
+.game-lobby-container .play-area .block:hover {
+    cursor: pointer;
+    background: lightgrey;
+}
+
+.game-lobby-container .play-area .block:nth-child(3n) {
+    border-right: none;
+}
+
+.game-lobby-container .play-area .block:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.game-lobby-container .play-area .block:nth-child(-n + 3) {
+    border-top: none;
+}
+
+.game-lobby-container .play-area .block:nth-child(n + 7) {
+    border-bottom: none;
+}

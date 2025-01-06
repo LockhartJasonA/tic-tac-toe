@@ -1,0 +1,94 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.home-container .home-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.home-container .home-header .leaderboard {
+    min-height: 158.5px;
+    min-width: 380px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.home-container .home-header .no-leaderboard {
+    display: flex;
+    justify-content: center;
+}
+
+.home-container .home-header .leaderboard h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.home-container .home-header .leaderboard div {
+    line-height: 1.5;
+}
+.home-container .home-header .create-lobby-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.home-container .home-header .create-lobby-holder .create-lobbies-title {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.home-container .home-header .create-lobby-holder .create-lobbies-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.home-container .home-header .create-lobby-holder .create-lobbies-button-wrapper button {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.home-container .lobby-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.home-container .no-lobbies {
+    padding-top: 50px;
+}
+
+.home-container .lobby-list .lobby-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d0d0d0;
+    color: #333;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.home-container .lobby-list .lobby-tile .join-lobby-button {
+    margin: 10px;
+}
+
+.home-container .lobby-list .lobby-tile .lobby-total {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+    color: #666;
+}

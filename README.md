@@ -4,6 +4,8 @@ To set up and run the project, use Docker Compose.
 
 ## Running the Project
 
+Convert .env.local to .env and set database credentials
+
 From the main directory, run the following command:
 
 ```bash
